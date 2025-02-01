@@ -1,0 +1,91 @@
+:root {
+  --bg-color: #e0e5ec;
+  --text-color: #2d4263;
+  --card-bg: #e0e5ec;
+  --neu-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+  --neu-inset: inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: #d1d9e6;
+  border-radius: 8px;
+}
+.dashboard-header h1 {
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.neu-card, .dash-graph, .metric-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: var(--neu-shadow);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+.neu-card:hover, .dash-graph:hover, .metric-card:hover {
+  transform: translateY(-2px);
+}
+
+.filter-section {
+  padding: 1.5rem;
+}
+.filter-section label {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.metric-card {
+  text-align: center;
+}
+.metric-card .card-header {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  padding: 1rem 0;
+}
+.metric-card .card-title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin: 0.5rem 0;
+}
+
+.dash-graph {
+  padding: 1rem;
+}
+.dash-graph .plot-container {
+  background: transparent !important;
+}
+
+.neu-input {
+  background: var(--card-bg);
+  border: none;
+  box-shadow: var(--neu-inset);
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: var(--text-color);
+  width: 100%;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .metric-card .card-title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}/*# sourceMappingURL=style.css.map */
