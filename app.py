@@ -43,7 +43,7 @@ def calculate_metrics(filtered_df):
     return total_confirmed, round(avg_time_to_sample, 1), round(status_ratio, 1)
 
 # Initialize Dash app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], title="Ebola Case Dashboard")
 server = app.server
 
 # App layout
